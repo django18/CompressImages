@@ -45,14 +45,13 @@ async function compressImages(folderPath) {
 }
 
 // Specify the path of the main folder containing subfolders with images
-const mainFolderPath = "/Users/avinashdangi/Downloads/Catalogue";
+const mainFolderPath = "/path/to/main/folder";
 
 console.log("Running the Compression Script");
 
 try {
   // Call the function to compress images in each subfolder
   fs.readdirSync(mainFolderPath).forEach((folder) => {
-    console.log("folder", folder);
     const folderPath = path.join(mainFolderPath, folder);
     if (fs.statSync(folderPath).isDirectory()) {
       compressImages(folderPath);

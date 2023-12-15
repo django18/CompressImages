@@ -1,6 +1,5 @@
 Certainly! Here's the contents of the README file in a bash code block that you can copy:
 
-```bash
 # Image Compression Script
 
 ## Overview
